@@ -1,0 +1,34 @@
+body{
+width: auto;
+margin-top: 20%;
+margin-left: 40%;
+}
+
+h1{
+  font-size: 50px;
+  font-style: times;
+  color: blue;
+
+}
+
+h2{
+  font-size: 30px;
+  font-style: times;
+  color: orange;
+}
+
+#st1 {
+  list-style: none;
+  color: blue;
+}
+#szin1{
+  color: red;
+}
+#st2{
+  list-style: disc;
+  color: black;
+}
+#st3{
+  list-style: decimal;
+  color: black;
+}

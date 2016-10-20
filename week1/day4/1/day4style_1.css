@@ -1,0 +1,20 @@
+body {
+  color: red;
+  font-size: 30 px;
+}
+
+.box {
+  box-sizing: border-box;
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  padding-left: 30px;
+  padding-top: 25px;
+  border: 4px;
+  width: 250px;
+  height: 80px;
+  background: yellow;
+  border-color: black;
+  border-style: solid;
+}
