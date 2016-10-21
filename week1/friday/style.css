@@ -20,3 +20,38 @@ header{
   font-style: oblique;
   margin-left: 15%;
 }
+
+h1{
+  font-size: 25px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+h2{
+  font-size: 18px;
+  font-style: oblique;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+p{
+  font-size: 15px;
+  font-style: oblique;
+  font-weight: lighter;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+li{
+  font-size: 15px;
+  font-style: oblique;
+  font-weight: lighter;
+}
+
+.box{
+  box-sizing: border-box;
+  width: auto;
+  border-top: solid black;
+  margin-left: 10%;
+  margin-right: 10%;
+}
