@@ -1,6 +1,3 @@
-/*
- * print_usage.cpp
- */
 #include "print_usage.hpp"
 #include <iostream>
 #include <string>
@@ -16,5 +13,3 @@ void print_usage() {
 		<< "-c complete task" << endl << endl;
 
 }
-
-

@@ -5,36 +5,37 @@
 
 using namespace std;
 
-string list();
+string get_list();
 
 int main(int argc, char* argv[]) {
 
-	if (argc < 1) {
+	if (argc < 2) {
 		print_usage();
 	} else if (string (argv[1]) == "-l") {
-		cout << list << endl;
+		cout << get_list(); cout << endl;
 	} else if (string (argv[1]) == "-a") {
 		cout << "add"<< endl;
 	} else if (string (argv[1]) == "-r") {
 		cout << "remove"<< endl;
 	} else if (string (argv[1]) == "-c") {
 		cout << "complete"<< endl;
-	} else
+	} else {
 		cout << "invalid command. please choose from the list: " << endl;
 			print_usage();
-
+	}
+	//print_list();
 	return 0;
 }
 
-string list() {
-	string list;
+string get_list() {
+	string list_content;
 	ifstream To_do_list("todo.txt");
 	if (To_do_list.is_open()) {
-		while(To_do_list >> list) {
-			To_do_list >> list;
-			cout << list;
+		string line;
+		while(To_do_list >> line) {
+			list_content += line + "\n;";
 		}
 	}
 	To_do_list.close();
-	return list;
+	return list_content;
 }
