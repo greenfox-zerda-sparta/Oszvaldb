@@ -40,7 +40,7 @@ void Item_handler::add_item(std::string new_item) {
 
 void Item_handler::complete_task(std::string item) {
 	if(items != NULL) {
-		for (int i = 0; i < item_count + 1; i++) {
+		for (int i = 0; i < item_count; i++) {
 			if (items[i]->get_item() == item) {
 				items[i]->complete();
 			}
@@ -50,10 +50,9 @@ void Item_handler::complete_task(std::string item) {
 
 void Item_handler::remove_item(std::string item) {
 	if(items != NULL) {
-		for (int i = 0; i < item_count + 1; i++) {
+		for (int i = 0; i < item_count; i++) {
 			if (items[i]->get_item() == item) {
-				items[i]->~Task();
-				delete items[i];
+				items[i]->set_item(" ");
 			}
 		}
 	}
