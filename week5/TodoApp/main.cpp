@@ -2,28 +2,32 @@
 #include <string>
 #include <fstream>
 #include "print_usage.hpp"
+#include "Task.h"
+#include "Itemhandler.h"
 
 using namespace std;
 
 string get_list();
 
 int main(int argc, char* argv[]) {
+	Item_handler* todo = new Item_handler;
 
 	if (argc < 2) {
 		print_usage();
 	} else if (string (argv[1]) == "-l") {
 		cout << get_list(); cout << endl;
 	} else if (string (argv[1]) == "-a") {
-		cout << "add"<< endl;
+		todo->add_item(argv[2]);
 	} else if (string (argv[1]) == "-r") {
-		cout << "remove"<< endl;
+		todo->remove_item(argv[2]);
 	} else if (string (argv[1]) == "-c") {
-		cout << "complete"<< endl;
+		todo->complete_task(argv[2]);
 	} else {
 		cout << "invalid command. please choose from the list: " << endl;
 			print_usage();
 	}
-	//print_list();
+	delete todo;
+
 	return 0;
 }
 
