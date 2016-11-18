@@ -15,7 +15,8 @@ private:
 	Task** items;
 public:
 	Item_handler();
-	void add_item(std::string);
+	void list();
+	void add_item(std::string, std::string, std::string);
 	void remove_item(std::string);
 	void complete_task(std::string);
 	virtual ~Item_handler();

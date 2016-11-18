@@ -10,6 +10,7 @@ void print_usage() {
 		<< "-l list all tasks" << endl
 		<< "-a add task" << endl
 		<< "-r remove task" << endl
-		<< "-c complete task" << endl << endl;
+		<< "-c complete task" << endl
+		<< "-ci incomplete task" << endl << endl;
 
 }

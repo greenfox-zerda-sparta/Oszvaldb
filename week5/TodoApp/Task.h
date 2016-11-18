@@ -12,13 +12,16 @@
 
 class Task {
 private:
+	std::string item_ID;
 	std::string item;
 	bool completed;
 public:
 	Task(std::string);
 	std::string get_item();
+	std::string get_item_ID();
+	void set_item_ID(std::string);
 	void set_item(std::string);
-	void complete();
+	void set_complete(std::string);
 	bool is_complete();
 	virtual ~Task();
 };
